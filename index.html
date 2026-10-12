@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIYASAT | Old Royalty, New Rules — Premium Menswear</title>
+  <meta name="description" content="Riyasat is a premium menswear label built on Patiala heritage and a Gen Z attitude. Limited drops, heavyweight fabrics, modern fits.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Syne:wght@700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+  <!-- Interactive Custom Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Announcement & Drop Countdown Bar -->
+  <aside class="top-announcement">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>DROP 04 / LIMITED RUN &bull; FREE SHIPPING ON ORDERS ABOVE &#8377;3,000 &bull; PATIALA TO THE WORLD &bull; 7-DAY SIZE EXCHANGE &bull; WHEN IT'S GONE, IT'S GONE &bull; OLD ROYALTY, NEW RULES &bull;</span>
+        <span>DROP 04 / LIMITED RUN &bull; FREE SHIPPING ON ORDERS ABOVE &#8377;3,000 &bull; PATIALA TO THE WORLD &bull; 7-DAY SIZE EXCHANGE &bull; WHEN IT'S GONE, IT'S GONE &bull; OLD ROYALTY, NEW RULES &bull;</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Editorial Nav -->
+  <header class="header" id="header">
+    <div class="nav-inner">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-main">RIYASAT</span>
+        <span class="logo-origin">PATIALA &bull; 147001</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#shop" class="nav-item">Collection</a>
+        <a href="#story" class="nav-item">The Founder</a>
+        <a href="#lookbook" class="nav-item">Lookbook</a>
+        <a href="#sizeguide" class="nav-item">Size Guide</a>
+        <a href="#order" class="nav-item">Order / Drop Access</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Direct Instagram Link -->
+        <a href="https://instagram.com/riyasat.official" target="_blank" rel="noopener noreferrer" class="instagram-pill" title="Discover us on Instagram">
+          <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" fill="none" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          <span>@riyasat.official</span>
+        </a>
+
+        <!-- Wishlist Button -->
+        <button class="icon-btn" id="wishlistTrigger" aria-label="View Wishlist">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count" id="wishlistCount">0</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="17" height="17" stroke="currentColor" fill="none" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="17" height="17" stroke="currentColor" fill="none" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Burger -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop"></div>
+      <div class="container hero-content">
+        <div class="hero-meta-tag">
+          <span class="live-dot"></span>
+          <span>AUTUMN / WINTER 2026 DROP &bull; SMALL BATCH</span>
+        </div>
+
+        <h1 class="hero-headline">
+          OLD ROYALTY,<br><span class="accent-text">NEW RULES.</span>
+        </h1>
+
+        <p class="hero-statement">
+          Patiala’s regal craft cut for modern silhouettes. Heavyweight 240 GSM combed cotton, custom zari embroidery by Sheranwala Gate artisans, and rebellious street fits built for those who care how they show up.
+        </p>
+
+        <!-- Drop Countdown Timer Feature -->
+        <div class="drop-countdown-card">
+          <span class="cd-label">NEXT LIMITED DROP CLOSES IN:</span>
+          <div class="countdown-timer" id="countdownTimer">
+            <div class="cd-unit"><span id="cdHours">48</span><small>HRS</small></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-unit"><span id="cdMins">19</span><small>MIN</small></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-unit"><span id="cdSecs">42</span><small>SEC</small></div>
+          </div>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#shop" class="btn btn-primary">Shop The Drop &rarr;</a>
+          <a href="#story" class="btn btn-outline">Read Founder Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. The Shop / Collection Section -->
+    <section class="shop-section" id="shop">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <span class="section-eyebrow">DROP 04 / CURRENT COLLECTION</span>
+            <h2 class="section-title">The Eight Pieces</h2>
+          </div>
+          <p class="section-desc">
+            All pieces are crafted in limited quantities with heavyweight fabrics and finished by local artisans in Patiala. When it's gone, it is gone.
+          </p>
+        </div>
+
+        <!-- Filter & Sort Bar -->
+        <div class="filter-sort-bar">
+          <div class="category-tabs" id="categoryTabs">
+            <button class="cat-pill active" data-category="all">All Pieces (8)</button>
+            <button class="cat-pill" data-category="T-shirt">T-Shirts</button>
+            <button class="cat-pill" data-category="Hoodie">Hoodies</button>
+            <button class="cat-pill" data-category="Overshirt">Overshirts</button>
+            <button class="cat-pill" data-category="Jacket">Jackets</button>
+            <button class="cat-pill" data-category="Trousers">Trousers</button>
+            <button class="cat-pill" data-category="Accessory">Accessories</button>
+          </div>
+
+          <div class="sort-wrapper">
+            <label for="priceSort">Sort by:</label>
+            <select id="priceSort" class="sort-select">
+              <option value="default">Featured Drop Order</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Rendered dynamically by script.js -->
+        </div>
+
+        <!-- Fabric & Craftsmanship specs banner -->
+        <div class="spec-banner">
+          <div class="spec-item">
+            <span class="spec-label">FABRICS</span>
+            <strong>240 GSM Combed Cotton, Brushed Fleece, Washed Denim, Recycled Nylon</strong>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">DETAILS</span>
+            <strong>Hand-done Zari &amp; Phulkari finishes by Patiala artisans</strong>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">LOGISTICS</span>
+            <strong>Free shipping above &#8377;3,000 &bull; 7-day size exchange &bull; COD Available</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Our Story Section -->
+    <section class="story-section" id="story">
+      <div class="container story-container">
+        <div class="story-media">
+          <div class="founder-frame">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=80" alt="Aryaman Saldi, Founder of Riyasat" class="founder-photo">
+            <div class="founder-badge">
+              <strong>Aryaman Saldi, 20</strong>
+              <span>Founder &amp; Creative Director &bull; Patiala</span>
+            </div>
+          </div>
+          <div class="story-footnote">
+            <span>Started from a bedroom in 2023 with 12 restitched jackets.</span>
+          </div>
+        </div>
+
+        <div class="story-text">
+          <span class="section-eyebrow">GENESIS &bull; FROM SHERANWALA GATE</span>
+          <h2 class="section-title">"I make clothes for people who care how they show up."</h2>
+
+          <div class="quote-body">
+            <p>
+              "Patiala is a city with a royal past. The old maharajas wore the best fabrics, the sharpest turbans and the boldest embroidery in the country. I grew up around that heritage but never saw it in what people my age were wearing. The clothes on offer were either cheap fast fashion or expensive labels that did not feel like us. Nothing was made for a kid from a small city who wanted to look good."
+            </p>
+            <p>
+              "At 17 I started thrifting jackets, restitching them and selling them to friends from my bedroom. My first drop was 12 pieces and they sold out in a day. My mother thought it was a phase. Honestly, so did I. Then I kept going. I learned pattern cutting from a tailor uncle in Sheranwala Gate and fabrics from a mill owner who took a chance on a teenager with a spreadsheet."
+            </p>
+            <p>
+              "Today <strong>Riyasat</strong> is a full label. The name means a princely state, a kingdom. The idea is simple: <em>old royalty, new rules</em>. We take Patiala's heritage and cut it in modern fits, with heavyweight fabrics, clean silhouettes and details made by local artisans. Everything drops in small batches. When it is gone, it is gone."
+            </p>
+          </div>
+
+          <div class="story-stats">
+            <div class="stat-box">
+              <span class="stat-number">2023</span>
+              <span class="stat-caption">Founded in Bedroom</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">12 pcs</span>
+              <span class="stat-caption">First Drop (Sold out in 24h)</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">100%</span>
+              <span class="stat-caption">Artisan-Finished in Punjab</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Lookbook Section (Editorial Magazine Spread) -->
+    <section class="lookbook-section" id="lookbook">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <span class="section-eyebrow">EDITORIAL LOOKBOOK</span>
+            <h2 class="section-title">The Royal Rebellious Cut</h2>
+          </div>
+          <p class="section-desc">Styled on the streets of Patiala and Delhi. Unapologetic volume, structured shoulders, and raw textures.</p>
+        </div>
+
+        <div class="lookbook-spread">
+          <article class="spread-item spread-lead">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80" alt="Riyasat Nawab Jacket Boxy Fit" loading="lazy">
+            <div class="spread-caption">
+              <span class="spread-tag">01 / THE NAWAB BOMBER</span>
+              <h3>Structure Inspired by Royal Darbars</h3>
+              <p>Heavy brushed wool &amp; recycled nylon in Boxy Black with hidden maroon silk piping.</p>
+            </div>
+          </article>
+
+          <article class="spread-item">
+            <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=700&q=80" alt="Patiala Pleat Pants in Sand" loading="lazy">
+            <div class="spread-caption">
+              <span class="spread-tag">02 / PATIALA PLEAT</span>
+              <h3>Modern Drapery</h3>
+              <p>Fluid relaxed pleating that honors traditional salwars without losing clean street lines.</p>
+            </div>
+          </article>
+
+          <article class="spread-item">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" alt="Phulkari Panel Overshirt" loading="lazy">
+            <div class="spread-caption">
+              <span class="spread-tag">03 / PHULKARI PANEL</span>
+              <h3>Geometric Embroidery</h3>
+              <p>Ecru heavyweight weave with subtle tonal threadwork along the chest placket.</p>
+            </div>
+          </article>
+
+          <article class="spread-item spread-wide">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80" alt="Paranda Hoodie & Cargo street styling" loading="lazy">
+            <div class="spread-caption">
+              <span class="spread-tag">04 / STREET COUTURE</span>
+              <h3>Paranda Hoodie &bull; Royal Blue &bull; 450 GSM</h3>
+              <p>Braided tassel cord pullers and an oversized double-layered hood that holds its form.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Size Guide Section -->
+    <section class="sizeguide-section" id="sizeguide">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <span class="section-eyebrow">FIT ARCHITECTURE</span>
+            <h2 class="section-title">Fit &amp; Size Guide</h2>
+          </div>
+          <p class="section-desc">
+            We cut clothes intentionally. Understand the four silhouettes before choosing your size.
+          </p>
+        </div>
+
+        <!-- Fit explanation cards -->
+        <div class="fits-grid">
+          <div class="fit-card">
+            <h4>Oversized</h4>
+            <span class="fit-sub">Drop Shoulder &bull; Generous Chest</span>
+            <p>Designed to hang loose with 4–5 inches of positive ease. Buy your true size for the intended drape, or size down for a standard relaxed fit.</p>
+            <small>Featured on: Riyasat Heavy Tee, Paranda Hoodie</small>
+          </div>
+          <div class="fit-card">
+            <h4>Boxy</h4>
+            <span class="fit-sub">Cropped Length &bull; Wide Shoulders</span>
+            <p>Hits right at the belt line with square proportions and structured armholes. Gives an elevated, high-fashion stance.</p>
+            <small>Featured on: Nawab Jacket Bomber</small>
+          </div>
+          <div class="fit-card">
+            <h4>Baggy</h4>
+            <span class="fit-sub">Wide Leg &bull; Stacked Ankle</span>
+            <p>Deep rise with maximum room through the thigh and knee, puddling naturally over chunky sneakers or boots.</p>
+            <small>Featured on: Baggy Cargo Pants</small>
+          </div>
+          <div class="fit-card">
+            <h4>Regular &amp; Relaxed</h4>
+            <span class="fit-sub">Classic Silhouette &bull; Unrestricted</span>
+            <p>Clean through the body with natural shoulder lines, ideal for versatile layering throughout the year.</p>
+            <small>Featured on: Zari Track Jacket, Phulkari Overshirt, Pleat Pants</small>
+          </div>
+        </div>
+
+        <!-- Detailed Measurement Table -->
+        <div class="size-table-wrapper">
+          <table class="size-table">
+            <thead>
+              <tr>
+                <th>Size</th>
+                <th>Chest (Inches)</th>
+                <th>Waist (Inches)</th>
+                <th>Length (Inches)</th>
+                <th>Shoulder Drop</th>
+                <th>Best For (Height/Build)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>S (Small)</strong></td>
+                <td>38 &ndash; 40</td>
+                <td>28 &ndash; 30</td>
+                <td>27.5</td>
+                <td>Slightly Dropped</td>
+                <td>5'5" &ndash; 5'8" (Lean/Slim)</td>
+              </tr>
+              <tr>
+                <td><strong>M (Medium)</strong></td>
+                <td>41 &ndash; 43</td>
+                <td>31 &ndash; 32</td>
+                <td>28.5</td>
+                <td>Signature Drop</td>
+                <td>5'8" &ndash; 5'11" (Regular)</td>
+              </tr>
+              <tr>
+                <td><strong>L (Large)</strong></td>
+                <td>44 &ndash; 46</td>
+                <td>33 &ndash; 34</td>
+                <td>29.5</td>
+                <td>Extended Drop</td>
+                <td>5'10" &ndash; 6'1" (Athletic)</td>
+              </tr>
+              <tr>
+                <td><strong>XL</strong></td>
+                <td>47 &ndash; 49</td>
+                <td>35 &ndash; 36</td>
+                <td>30.5</td>
+                <td>Wide Stance</td>
+                <td>6'0" &ndash; 6'3" (Broad)</td>
+              </tr>
+              <tr>
+                <td><strong>XXL</strong></td>
+                <td>50 &ndash; 52</td>
+                <td>37 &ndash; 38</td>
+                <td>31.5</td>
+                <td>Maximum Box</td>
+                <td>6'1"+ (Substantial Fit)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Order and Early Access Form Section -->
+    <section class="order-section" id="order">
+      <div class="container order-container">
+        <div class="order-info">
+          <span class="section-eyebrow">DIRECT DROP RESERVATION</span>
+          <h2 class="section-title">Order or Join Early Access</h2>
+          <p class="order-subtext">
+            Reserve your piece from Drop 04 directly. Once submitted, our team in Patiala processes and coordinates delivery via WhatsApp/call.
+          </p>
+
+          <div class="perks-list">
+            <div class="perk-item">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+              <div>
+                <strong>Free Pan-India Delivery</strong>
+                <span>Orders over &#8377;3,000 ship free. Delivered in 4 to 7 working days.</span>
+              </div>
+            </div>
+
+            <div class="perk-item">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2">
+                <path d="M1 4v6h6"></path>
+                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+              </svg>
+              <div>
+                <strong>7-Day Size Exchange</strong>
+                <span>Hassle-free reverse pickup if the fit needs adjusting.</span>
+              </div>
+            </div>
+
+            <div class="perk-item">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+              </svg>
+              <div>
+                <strong>Flexible Payment Modes</strong>
+                <span>UPI, Debit/Credit Cards, Net Banking &amp; Cash On Delivery (COD).</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-card-wrapper" id="orderCardWrapper">
+          <!-- Real Interactive Order Form -->
+          <form id="orderForm" class="order-form" novalidate>
+            <h3 class="form-heading">Secure Your Piece</h3>
+
+            <!-- 1. Full name -->
+            <div class="form-group" id="grp-fullname">
+              <label for="fullname">Full Name <span class="req">*</span></label>
+              <input type="text" id="fullname" name="fullname" placeholder="Fateh Singh" autocomplete="name">
+              <span class="field-error" id="err-fullname"></span>
+            </div>
+
+            <div class="form-row">
+              <!-- 2. Phone number (10 digits) -->
+              <div class="form-group" id="grp-phone">
+                <label for="phone">Phone Number (10 digits) <span class="req">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="9876543210" maxlength="10" autocomplete="tel">
+                <span class="field-error" id="err-phone"></span>
+              </div>
+
+              <!-- 3. Email address -->
+              <div class="form-group" id="grp-email">
+                <label for="email">Email Address <span class="req">*</span></label>
+                <input type="email" id="email" name="email" placeholder="fateh@example.com" autocomplete="email">
+                <span class="field-error" id="err-email"></span>
+              </div>
+            </div>
+
+            <!-- 4. Instagram handle (optional, must start with @) -->
+            <div class="form-group" id="grp-instagram">
+              <label for="instagram">Instagram Handle <span class="opt">(optional, starting with @)</span></label>
+              <input type="text" id="instagram" name="instagram" placeholder="@yourhandle">
+              <span class="field-error" id="err-instagram"></span>
+            </div>
+
+            <!-- Dynamic Product Selection Fields -->
+            <div class="form-row three-col">
+              <!-- 5. Piece -->
+              <div class="form-group" id="grp-piece">
+                <label for="pieceSelect">Piece <span class="req">*</span></label>
+                <select id="pieceSelect" name="piece">
+                  <!-- Populated by JS -->
+                </select>
+                <span class="field-error" id="err-piece"></span>
+              </div>
+
+              <!-- 6. Colour (changes with piece) -->
+              <div class="form-group" id="grp-colour">
+                <label for="colourSelect">Colour <span class="req">*</span></label>
+                <select id="colourSelect" name="colour">
+                  <!-- Populated dynamically based on piece -->
+                </select>
+                <span class="field-error" id="err-colour"></span>
+              </div>
+
+              <!-- 7. Size (changes with piece) -->
+              <div class="form-group" id="grp-size">
+                <label for="sizeSelect">Size <span class="req">*</span></label>
+                <select id="sizeSelect" name="size">
+                  <!-- Populated dynamically based on piece -->
+                </select>
+                <span class="field-error" id="err-size"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <!-- 8. Quantity (1 to 5) -->
+              <div class="form-group" id="grp-quantity">
+                <label for="quantity">Quantity (1&ndash;5) <span class="req">*</span></label>
+                <input type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+                <span class="field-error" id="err-quantity"></span>
+              </div>
+
+              <!-- Live Price Breakdown Display -->
+              <div class="price-summary-box">
+                <div class="sum-row">
+                  <span>Unit Price:</span>
+                  <strong id="displayUnitPrice">&#8377;2,499</strong>
+                </div>
+                <div class="sum-row">
+                  <span>Shipping:</span>
+                  <span id="displayShipping" class="shipping-free">FREE</span>
+                </div>
+                <div class="sum-row total-row">
+                  <span>Estimated Total:</span>
+                  <strong id="displayTotal">&#8377;2,499</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9. Delivery address -->
+            <div class="form-group" id="grp-address">
+              <label for="address">Delivery Address <span class="req">*</span></label>
+              <textarea id="address" name="address" rows="2" placeholder="House/Flat No., Street, Landmark..."></textarea>
+              <span class="field-error" id="err-address"></span>
+            </div>
+
+            <div class="form-row">
+              <!-- 10. City -->
+              <div class="form-group" id="grp-city">
+                <label for="city">City <span class="req">*</span></label>
+                <input type="text" id="city" name="city" placeholder="Patiala, Chandigarh, Delhi...">
+                <span class="field-error" id="err-city"></span>
+              </div>
+
+              <!-- 11. Pincode (strictly 6 digits) -->
+              <div class="form-group" id="grp-pincode">
+                <label for="pincode">Pincode (6 digits) <span class="req">*</span></label>
+                <input type="text" id="pincode" name="pincode" maxlength="6" placeholder="147001">
+                <span class="field-error" id="err-pincode"></span>
+              </div>
+            </div>
+
+            <!-- 12. Payment preference (Radio buttons) -->
+            <div class="form-group" id="grp-payment">
+              <label class="group-title">Payment Preference <span class="req">*</span></label>
+              <div class="payment-radios">
+                <label class="radio-card">
+                  <input type="radio" name="payment" value="UPI" checked>
+                  <span class="radio-indicator"></span>
+                  <span class="radio-label-text">UPI (Instant)</span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="payment" value="Card">
+                  <span class="radio-indicator"></span>
+                  <span class="radio-label-text">Credit / Debit Card</span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="payment" value="Net banking">
+                  <span class="radio-indicator"></span>
+                  <span class="radio-label-text">Net Banking</span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="payment" value="Cash on delivery">
+                  <span class="radio-indicator"></span>
+                  <span class="radio-label-text">Cash on Delivery</span>
+                </label>
+              </div>
+              <span class="field-error" id="err-payment"></span>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="form-checkboxes">
+              <!-- 13. Join early access list -->
+              <label class="check-container">
+                <input type="checkbox" id="earlyAccess" name="earlyAccess" checked>
+                <span class="check-box"></span>
+                <span class="check-text">Join the VIP early access list for next month's drop (drop alerts 2 hours early).</span>
+              </label>
+
+              <!-- 14. Consent -->
+              <label class="check-container" id="grp-consent">
+                <input type="checkbox" id="consent" name="consent">
+                <span class="check-box"></span>
+                <span class="check-text">I consent to being contacted by call, WhatsApp or email to confirm my order. <span class="req">*</span></span>
+              </label>
+              <span class="field-error" id="err-consent"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submitOrderBtn">
+              Submit Order &bull; Lock In Drop Piece
+            </button>
+          </form>
+
+          <!-- Order Summary Success Card (Replaces form on submit) -->
+          <div id="orderConfirmation" class="order-confirmation-card" style="display: none;">
+            <div class="confirm-badge">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3 class="confirm-title">DROP RESERVATION CONFIRMED</h3>
+            <p class="confirm-intro">Your piece is locked in Aryaman's small batch roster. Here is your order breakdown:</p>
+
+            <div class="confirm-receipt">
+              <div class="receipt-line">
+                <span class="r-label">Selected Piece:</span>
+                <strong class="r-val" id="confPiece">&mdash;</strong>
+              </div>
+              <div class="receipt-line">
+                <span class="r-label">Colour &amp; Fit:</span>
+                <span class="r-val" id="confColour">&mdash;</span>
+              </div>
+              <div class="receipt-line">
+                <span class="r-label">Size:</span>
+                <strong class="r-val" id="confSize">&mdash;</strong>
+              </div>
+              <div class="receipt-line">
+                <span class="r-label">Quantity:</span>
+                <span class="r-val" id="confQty">&mdash;</span>
+              </div>
+              <div class="receipt-line">
+                <span class="r-label">Delivery City:</span>
+                <span class="r-val" id="confCity">&mdash;</span>
+              </div>
+              <div class="receipt-line">
+                <span class="r-label">Payment Mode:</span>
+                <span class="r-val" id="confPayment">&mdash;</span>
+              </div>
+              <div class="receipt-line total-receipt-line">
+                <span class="r-label">Total Amount:</span>
+                <strong class="r-val" id="confTotal">&mdash;</strong>
+              </div>
+            </div>
+
+            <p class="confirm-dispatch-note">
+              A member of the Riyasat studio in Patiala will ping your WhatsApp to verify pincode dispatch within 24 hours.
+            </p>
+
+            <button type="button" class="btn btn-outline btn-block" id="newOrderBtn">Place Another Order / Drop Request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Quick View Modal Feature -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+      <div class="modal-grid">
+        <div class="modal-img-wrap">
+          <img id="modalImg" src="" alt="Product image">
+          <div class="modal-color-swatches" id="modalSwatches"></div>
+        </div>
+        <div class="modal-details">
+          <span class="modal-cat" id="modalCategory">T-SHIRT &bull; OVERSIZED</span>
+          <h3 class="modal-title" id="modalName">Riyasat Heavy Tee</h3>
+          <div class="modal-price" id="modalPrice">&#8377;2,499</div>
+          <p class="modal-desc" id="modalDesc">Heavyweight 240 GSM combed cotton featuring vintage wash and drop shoulder fit.</p>
+          <div class="modal-specs">
+            <div><strong>Fit:</strong> <span id="modalFit">Oversized</span></div>
+            <div><strong>Sizes:</strong> <span id="modalSizes">S to XXL</span></div>
+            <div><strong>Finishing:</strong> Artisan embroidered in Patiala</div>
+          </div>
+          <button class="btn btn-primary btn-block" id="modalOrderNowBtn">Select in Order Form &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wishlist Slideout Drawer -->
+  <aside class="drawer" id="wishlistDrawer">
+    <div class="drawer-header">
+      <h3>Saved Pieces (<span id="drawerCount">0</span>)</h3>
+      <button class="drawer-close" id="drawerCloseBtn">&times;</button>
+    </div>
+    <div class="drawer-body" id="drawerBody">
+      <p class="empty-msg">No pieces added to your wishlist yet.</p>
+    </div>
+  </aside>
+
+  <!-- Contact & Footer Section -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-col brand-col">
+        <h4 class="footer-logo">RIYASAT</h4>
+        <p class="tagline">OLD ROYALTY, NEW RULES.</p>
+        <p class="footer-about">
+          A premium menswear label founded in 2023 by Aryaman Saldi in Patiala, Punjab. Heavyweight fabrics, royal heritage accents, and Gen Z silhouettes dropped in monthly limited runs.
+        </p>
+      </div>
+
+      <div class="footer-col links-col">
+        <h5 class="col-title">Navigation</h5>
+        <ul>
+          <li><a href="#shop">Current Drop</a></li>
+          <li><a href="#story">Aryaman's Journey</a></li>
+          <li><a href="#lookbook">Editorial Lookbook</a></li>
+          <li><a href="#sizeguide">Fit &amp; Size Guide</a></li>
+          <li><a href="#order">Order &amp; Early Access</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col service-col">
+        <h5 class="col-title">Client Care &amp; Policies</h5>
+        <ul>
+          <li><span>Free shipping on orders above &#8377;3,000</span></li>
+          <li><span>Pan-India delivery in 4 to 7 working days</span></li>
+          <li><span>7-day size exchange on all pieces</span></li>
+          <li><span>Payment: UPI, Cards, Net Banking, COD</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col connect-col">
+        <h5 class="col-title">Connect &bull; Patiala</h5>
+        <ul class="connect-list">
+          <li>
+            <a href="https://instagram.com/riyasat.official" target="_blank" rel="noopener noreferrer" class="social-touch">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>@riyasat.official</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/919800000000" target="_blank" rel="noopener noreferrer" class="social-touch">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span>WhatsApp: +91 98XXX XXXXX</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:hello@riyasat.in" class="social-touch">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>hello@riyasat.in</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-inner">
+        <p>&copy; <span id="year">2026</span> RIYASAT. All Rights Reserved. Crafted with pride in Patiala, Punjab.</p>
+        <p class="legal-note">Prices in INR inclusive of all GST taxes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
